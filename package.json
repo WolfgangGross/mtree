@@ -1,0 +1,37 @@
+{
+  "name": "mtree",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Tech trees and reading notes for learning technical topics. Engine in engine/, everything you write in human/.",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run check && vite build",
+    "preview": "vite preview",
+    "check": "tsx engine/cli/check.ts",
+    "typecheck": "tsc --noEmit -p .",
+    "test": "vitest run",
+    "new-atlas": "tsx engine/cli/new-atlas.ts",
+    "add-paper": "tsx engine/cli/add-paper.ts"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "katex": "^0.19.1",
+    "marked": "^18.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jsdom": "^31.0.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.4.0",
+    "vitest": "^5.1.2"
+  }
+}

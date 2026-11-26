@@ -1,0 +1,71 @@
+/*
+  Look and feel. Every colour, font and size the engine uses comes from here,
+  so you can restyle the whole site without touching engine/.
+  Save the file and the running app updates instantly.
+
+  Want a different font? Add an @import from Google Fonts at the very top, e.g.
+    @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&display=swap");
+  and change --font-display below.
+*/
+
+:root {
+  /* ── Paper and ink ─────────────────────────────────────────── */
+  --paper: #f8f8f6;          /* page background */
+  --paper-raised: #ffffff;   /* cards, inputs */
+  --paper-sunk: #efefeb;     /* graph backgrounds, selected rows */
+  --ink: #0d0d0d;            /* headings and body text */
+  --ink-soft: #2f2f2f;
+  --ink-muted: #5a5a5a;      /* secondary text, ledes */
+  --ink-faint: #8a8a8a;      /* labels, meta */
+  --rule: #dcdcd6;           /* hairlines between things */
+  --rule-strong: #0d0d0d;    /* the line under the header */
+  --link: #1a56db;           /* links in prose */
+  --dot-grid: #d4d4cd;       /* the dotted background of graphs */
+
+  /* ── Plates: the dark panels that hold animated figures ─────── */
+  --plate: #121a1b;
+  --plate-ink: #dde6dc;
+  --plate-muted: #8fa596;
+  --plate-rule: #33433e;
+  --plate-accent: #b9e89a;
+
+  /* ── Named colours: use these names in kinds.md and "accent:" ── */
+  --violet: #7a7190;
+  --slate: #6a7c9b;
+  --green: #3d7350;
+  --amber: #a87d3c;
+  --rose: #a85d63;
+  --teal: #3f8285;
+  --ink-color: #0d0d0d;      /* "ink" */
+
+  /* The default accent when an atlas sets none. */
+  --accent: var(--ink);
+
+  /* ── Type ──────────────────────────────────────────────────── */
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --display-style: italic;   /* headings: italic or normal */
+  --display-weight: 600;
+  --body-weight: 300;
+  --strong-weight: 500;
+
+  --size-body: 16px;
+  --size-prose: 17px;        /* long-form reading text */
+  --size-small: 14px;
+  --size-label: 10.5px;      /* the small uppercase mono labels */
+  --tracking-label: 0.12em;
+  --line-height: 1.7;
+
+  --size-h1: clamp(44px, 6.2vw, 92px);   /* atlas cover title */
+  --size-h2: clamp(30px, 3.4vw, 44px);   /* section titles */
+  --size-h3: 24px;
+
+  /* ── Shape and space ───────────────────────────────────────── */
+  --radius: 2px;
+  --hairline: 1px;
+  --measure: 940px;          /* width of reading pages */
+  --wide: 1360px;            /* width of atlas pages */
+  --gutter: clamp(16px, 4vw, 40px);
+}

@@ -1,0 +1,7 @@
+/*
+  Your own CSS overrides, loaded after everything else.
+  Prefer changing a token in tokens.css first; use this file for one-off tweaks, e.g.
+
+    .node strong { font-family: var(--font-body); font-style: normal; }
+    .cover-title { letter-spacing: -0.03em; }
+*/

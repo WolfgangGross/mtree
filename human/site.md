@@ -1,6 +1,6 @@
-# Unlock Atlas
+# AI Atlas
 
-tagline:  Tech trees for the ideas I am learning
+tagline:  Tech trees for the ideas AI
 footer:   A working atlas, updated as I read. Notes are living documents, not finished essays.
 
 I learn technical topics by reading papers, white papers and technical blogs. Each atlas
